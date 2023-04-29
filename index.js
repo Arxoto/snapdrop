@@ -26,7 +26,7 @@ const mainServer = http.createServer((request, response) => {
   // You pass two more arguments for config and middleware
   // More details here: https://github.com/vercel/serve-handler#options
   return handler(request, response, {
-    "public": "client"
+    "public": __dirname + "/client"
   });
 });
 
